@@ -1,0 +1,45 @@
+body{
+  font-family: 'Atlas Grotesk Web';
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+  font-size: 20px;
+
+  background-image: url("../img/zange.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 100%;
+
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.info-text p{
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+a.no-link-style {
+  color: black;
+}
+
+a.no-link-style:hover, a.no-link-style:active, a.no-link-style:focus{
+  text-decoration: none;
+}
+
+.imprint {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.margin-top{
+  margin-top: 30px;
+}
