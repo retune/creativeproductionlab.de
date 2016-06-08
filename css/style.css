@@ -19,10 +19,6 @@ body{
   font-stretch: normal;
   font-size: 18px;
 
-  background-image: url("../img/zange.jpg");
-  background-position: center 0px;
-  background-repeat: no-repeat;
-
   line-height: 1.5;
 
   height: 100%;
@@ -46,9 +42,10 @@ a, a:hover, a:active, a:focus{
 
 #landingpage {
   height: 100%;
-  background-color: #b5b5b5;
+  /*background-color: #b5b5b5;*/
   padding: 20px;
   font-size: 18px;
+  background: url("../img/zange.jpg") no-repeat fixed center;
 }
 
 .biginfos {
@@ -86,6 +83,7 @@ a, a:hover, a:active, a:focus{
 
 #description{
   margin-top: 100px;
+  background: white;
 }
 
 .caption{
