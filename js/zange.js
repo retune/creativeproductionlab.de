@@ -10,9 +10,19 @@ var camera, scene, renderer, objects;
 var particleLight;
 var dae;
 
+var filename;
+
 var loader = new THREE.ColladaLoader();
 loader.options.convertUpAxis = false;
-loader.load( './js/zange_2.dae', function ( collada ) {
+
+
+if(Math.random() < 0.5){
+  filename = "./js/zange_2.dae";
+} else {
+  filename = "./js/hammer2.dae";
+}
+
+loader.load( filename, function ( collada ) {
   dae = collada.scene;
   dae.traverse( function ( child ) {
     if (child instanceof THREE.Mesh) {
