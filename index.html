@@ -31,12 +31,62 @@
 		<script src="js/ColladaLoader.js"></script>
 		<script src="js/Detector.js"></script>
     <script src="js/zange.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script>
+
+      $( document ).ready(function() {
+        // smooth scrolling for internal links from here: http://www.paulund.co.uk/smooth-scroll-to-internal-links-with-jquery
+				$('#menuoverlay ul a[href^="#"]').on('click',function (e) {
+				    e.preventDefault();
+				    var target = this.hash,
+				    $target = $(target);
+				    $('html, body').stop().animate({
+				        'scrollTop': $target.offset().top - 80
+				    }, 900, 'swing', function () {
+				        window.location.hash = target;
+				    });
+				});
+
+
+        $("#showMenu").click(function(){
+          $("#menuoverlay").animate({width:'toggle'},350);
+          return false;
+        });
+
+        $("#hideMenu").click(function(){
+          $("#menuoverlay").animate({width:'toggle'},350);
+          return false;
+        });
+
+        $("#menuoverlay ul a").click(function(){
+          $("#menuoverlay").animate({width:'toggle'},350);
+        });
+      });
+    </script>
 
     <div class="container-fluid">
 
+      <div id="menuoverlay">
+        <div class="innerOverlay">
+          <a id="hideMenu" href="#">Schließen</a>
+          <ul>
+            <li><a href="#description">Information</a></li>
+            <li><a href="#overview">Überblick</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+          <ul class="social">
+            <li><a href="">Impressum</a></li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+
       <div class="nav">
         <h1>Creative<br/>Production<br/>Lab</h1>
-        <div class="menubutton">Menu</div>
+
+        <div class="menubutton"><a id="showMenu" title="Show Menu" href="#">Menü</a></div>
       </div>
 
       <div class="row" id="landingpage">
@@ -74,7 +124,7 @@
         </div>
       </div>
 
-      <div class="row overview">
+      <div id="overview" class="row overview">
         <div class="col-md-4">
           <h2>Überblick</h2>
           <ul>
@@ -116,7 +166,7 @@
         <a href="http://goo.gl/forms/LcjVIe6SQRzUiG423"><div class="signup">Jetzt bewerben!</div></a>
       </div>
 
-      <div class="row contact">
+      <div id="contact" class="row contact">
         <div class="col-md-4">
           <h2>Kontakt</h2>
           <p>Retune<br/>Creative Technology GmbH<br/>Glogauer Str. 21<br/>10999 Berlin</p>
