@@ -51,8 +51,12 @@ canvas {
   background-color: #ccc;
 }
 
-.biginfos {
-  font-size: 70px;
+.carousel {
+  position: inherit;
+}
+
+.carousel-inner {
+  font-size: 50px;
 
   position: absolute;
   width: 100%;
