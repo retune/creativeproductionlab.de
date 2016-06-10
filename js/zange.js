@@ -12,7 +12,7 @@ var dae;
 
 var loader = new THREE.ColladaLoader();
 loader.options.convertUpAxis = false;
-loader.load( './js/zange.dae', function ( collada ) {
+loader.load( './js/zange_2.dae', function ( collada ) {
   dae = collada.scene;
   dae.traverse( function ( child ) {
     if (child instanceof THREE.Mesh) {
