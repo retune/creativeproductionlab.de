@@ -10,14 +10,15 @@
 
 
 html { height: 100%; }
-body{ font-family: 'Atlas Grotesk Web'; font-weight:  400; font-style: normal; font-stretch: normal; font-size: 18px; line-height: 1.5; height: 100%; }
-h1 { font-size: 18px; margin: 0; line-height: 1.3; }
-h2 { font-family: 'Suisse Mono'; font-size: 13px; margin-bottom: 40px; }
+body{ font-family: 'Atlas Grotesk Web'; font-weight: 400; font-style: normal; font-stretch: normal; font-size: 20px; line-height: 1.5; height: 100%; }
+h1 { font-size: 20px; margin: 0; line-height: 1.3; }
+h2 { font-family: 'Suisse Mono'; font-size: 15px; margin-bottom: 40px; }
 a, a:hover, a:active, a:focus{ text-decoration: none; color: #333; }
 ul { margin:0; padding: 0; }
 ul li{ list-style-type: none; margin-bottom: 40px;}
 em { font-style: normal; text-decoration: underline; }
 
+.row {padding: 0 50px; }
 .container-fluid { height: 100%; }
 .col-md-4 { padding: 50px; }
 
@@ -25,7 +26,7 @@ em { font-style: normal; text-decoration: underline; }
 *  START PAGE
 *****************/
 #landingpage { height: 100%; padding: 0; font-size: 18px; /*background: url("../img/zange.jpg") no-repeat fixed center;*/ display: table; width: 100%; height: 100%;}
-canvas { background-color: #ccc; position: absolute; left:0; top: 0;}
+canvas { background-color: #ccc; position: fixed; left:0; top: 0; z-index: -1;}
 .carousel { display: table-cell; text-align: center; vertical-align: middle; z-index: 3; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.35);}
 .carousel-inner { font-size: 50px; font-size: 6vw; color: white; }
 .jump-down { position: absolute; bottom: 30px; z-index: 4; left: 50%; width: 20px; margin-left: -10px; text-align: center;}
@@ -33,34 +34,41 @@ canvas { background-color: #ccc; position: absolute; left:0; top: 0;}
 /****************
 * NAVIGATION
 *****************/
-.nav { position: fixed; width: 100%; top: 30px; left: 50px; z-index: 4; }
+.nav { position: fixed; width: 100%; top: 30px; left: 50px; z-index: 4; padding-left: 50px; }
 #menuoverlay{ position: fixed; top:0; right:0; background-color: #20eb92; width: 50%; height:100%; z-index: 5; display: none; padding: 30px; }
-#menuoverlay li { margin-bottom: 10px; font-family: 'Suisse Mono'; font-size: 34px; }
+#menuoverlay li { margin-bottom: 10px; font-family: 'Suisse Mono'; font-size: 40px; }
 #menuoverlay ul{ margin-top: 40px; }
 #menuoverlay ul.social li{ display: block; float: left; font-size: 14px; margin-right: 20px; }
 .innerOverlay{ position: absolute; top: 30px; left: 50px; }
-.menubutton { position: absolute; top: 0px; left: 50%; z-index: 10; }
+.menubutton { position: absolute; top: 0px; left: 50%; z-index: 4; }
 
 /****************
 * DESCRIPTION
 *****************/
 #description{ margin-top: 100px; background: white; }
 .underline { text-decoration: underline; }
-.caption{ font-family: 'Suisse Mono'; font-size: 14px; margin-top: 14px; margin-bottom: 60px; }
+.caption{ font-family: 'Suisse Mono'; font-size: 14px; margin-top: 14px; margin-bottom: 100px; }
 
 /****************
 * OVERVIEW
 *****************/
-.overview { font-family: 'Suisse Mono'; font-size: 22px; background-color: #20eb92; }
+.overview { font-family: 'Suisse Mono'; font-size: 22px; background-color: #00cfee; }
 .signup{ position: relative; left: 50%; border: 2px solid #333; bottom: 10px; width: 300px; text-align: center; margin-left: -150px; padding: 10px 40px; margin-bottom: 100px; }
 .signup:hover { background-color: #333; color: white;}
 
 /****************
 * CONTACT & CREDITS
 *****************/
+#contact { background-color: white; margin-top: 30%;}
+.contact input { width: 100%; border: 1px solid #333; }
 a.social { text-decoration: underline; margin-right: 15px; }
 p.newsletter{ margin-top: 30px; }
-.contact input { width: 100%; border: 1px solid #333; }
-.credits { font-family: 'Suisse Mono'; font-size: 13px; }
+.credits { font-family: 'Suisse Mono'; font-size: 13px; background-color: white;}
 .credits h2{ margin-top: 0; }
 .retune { font-family: 'Atlas Grotesk Web'; font-weight:  400; font-style:   normal; font-stretch: normal; font-size: 30px; }
+
+@media (min-width: 1600px) {
+  body{ font-size: 30px; }
+  h1 { font-size: 30px; }
+  h2 { font-size: 18px; }
+}

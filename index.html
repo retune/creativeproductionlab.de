@@ -36,7 +36,7 @@
 
       $( document ).ready(function() {
         // smooth scrolling for internal links from here: http://www.paulund.co.uk/smooth-scroll-to-internal-links-with-jquery
-				$('#menuoverlay ul a[href^="#"]').on('click',function (e) {
+        $('a.smooth').on('click',function (e) {
 				    e.preventDefault();
 				    var target = this.hash,
 				    $target = $(target);
@@ -47,31 +47,20 @@
 				    });
 				});
 
-        $('.jump-down a[href^="#"]').on('click',function (e) {
-				    e.preventDefault();
-				    var target = this.hash,
-				    $target = $(target);
-				    $('html, body').stop().animate({
-				        'scrollTop': $target.offset().top
-				    }, 900, 'swing', function () {
-				        window.location.hash = target;
-				    });
-				});
-
-
+        var menuSpeed = 150;
 
         $("#showMenu").click(function(){
-          $("#menuoverlay").animate({width:'toggle'},350);
+          $("#menuoverlay").animate({width:'toggle'},menuSpeed);
           return false;
         });
 
         $("#hideMenu").click(function(){
-          $("#menuoverlay").animate({width:'toggle'},350);
+          $("#menuoverlay").animate({width:'toggle'},menuSpeed);
           return false;
         });
 
         $("#menuoverlay ul a").click(function(){
-          $("#menuoverlay").animate({width:'toggle'},350);
+          $("#menuoverlay").animate({width:'toggle'},menuSpeed);
         });
       });
     </script>
@@ -82,9 +71,9 @@
         <div class="innerOverlay">
           <a id="hideMenu" href="#">Schließen</a>
           <ul>
-            <li><a href="#description">Information</a></li>
-            <li><a href="#overview">Überblick</a></li>
-            <li><a href="#contact">Kontakt</a></li>
+            <li><a href="#description" class="smooth">Information</a></li>
+            <li><a href="#overview" class="smooth">Überblick</a></li>
+            <li><a href="#contact" class="smooth">Kontakt</a></li>
           </ul>
           <ul class="social">
             <li><a href="">Impressum</a></li>
@@ -96,7 +85,7 @@
       </div>
 
       <div class="nav">
-        <h1>Creative<br/>Production<br/>Lab</h1>
+        <a href="#landingpage" class="smooth"><h1>Creative<br/>Production<br/>Lab</h1></a>
 
         <div class="menubutton"><a id="showMenu" title="Show Menu" href="#">Menü</a></div>
       </div>
@@ -118,7 +107,7 @@
             </div>
           </div>
         </div>
-        <div class="jump-down"><a href="#description"><img src="img/arrow.png" alt="jump to content"/></a></div>
+        <div class="jump-down"><a href="#description" class="smooth"><img src="img/arrow.png" alt="jump to content"/></a></div>
       </div>
 
       <div class="row" id="description">
