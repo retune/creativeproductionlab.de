@@ -47,6 +47,17 @@
 				    });
 				});
 
+        $('.jump-down a[href^="#"]').on('click',function (e) {
+				    e.preventDefault();
+				    var target = this.hash,
+				    $target = $(target);
+				    $('html, body').stop().animate({
+				        'scrollTop': $target.offset().top
+				    }, 900, 'swing', function () {
+				        window.location.hash = target;
+				    });
+				});
+
 
 
         $("#showMenu").click(function(){
@@ -107,6 +118,7 @@
             </div>
           </div>
         </div>
+        <div class="jump-down"><a href="#description"><img src="img/arrow.png" alt="jump to content"/></a></div>
       </div>
 
       <div class="row" id="description">
