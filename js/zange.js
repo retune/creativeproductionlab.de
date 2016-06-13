@@ -1,3 +1,4 @@
+$( document ).ready(function() {
 if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
 
 var container;
@@ -105,3 +106,4 @@ function render() {
   THREE.AnimationHandler.update( clock.getDelta() );
   renderer.render( scene, camera );
 }
+});

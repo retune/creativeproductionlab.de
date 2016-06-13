@@ -23,7 +23,7 @@
     <meta name="google-site-verification" content="kJuypZVfOmufmyXw8jL5fl2wRePA2HCjH1PkHyrjp8w" />
   </head>
   <body>
-
+    <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/three.min.js"></script>
 		<script src="js/collada/Animation.js"></script>
 		<script src="js/collada/AnimationHandler.js"></script>
@@ -31,7 +31,6 @@
 		<script src="js/ColladaLoader.js"></script>
 		<script src="js/Detector.js"></script>
     <script src="js/zange.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
     <script>
 
       $( document ).ready(function() {
@@ -86,27 +85,28 @@
 
       <div class="nav">
         <a href="#landingpage" class="smooth"><h1>Creative<br/>Production<br/>Lab</h1></a>
-
         <div class="menubutton"><a id="showMenu" title="Show Menu" href="#">Menü</a></div>
       </div>
 
       <div class="row" id="landingpage">
-        <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="false">
-          <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                12 Unternehmer_innen<br/>aus der Kreativwirtschaft
-            </div>
-            <div class="item">
-                12 Unternehmer_innen<br/>aus produzierenden Betrieben
-            </div>
-            <div class="item">
-                Teilnahme kostenlos<br/>Bewerbung bis 15.08.2016
-            </div>
-            <div class="item">
-                4.–6. Oktober 2016<br/>in Berlin
+        <div class="carousel-wrap">
+          <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="false">
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                  12 Unternehmer_innen<br/>aus der Kreativwirtschaft
+              </div>
+              <div class="item">
+                  12 Unternehmer_innen<br/>aus produzierenden Betrieben
+              </div>
+              <div class="item">
+                  Teilnahme kostenlos<br/>Bewerbung bis 15.08.2016
+              </div>
+              <div class="item">
+                  4.–6. Oktober 2016<br/>in Berlin
+              </div>
             </div>
           </div>
-        </div>
+        </div> <!-- /carousel-wrap -->
         <div class="jump-down"><a href="#description" class="smooth"><img src="img/arrow.png" alt="jump to content"/></a></div>
       </div>
 

@@ -10,7 +10,7 @@
 
 
 html { height: 100%; }
-body{ font-family: 'Atlas Grotesk Web'; font-weight: 400; font-style: normal; font-stretch: normal; font-size: 20px; line-height: 1.5; height: 100%; }
+body{ font-family: 'Atlas Grotesk Web'; font-weight: 400; font-style: normal; font-stretch: normal; font-size: 20px; line-height: 1.5; height: 100%;  background-color: #ccc;}
 h1 { font-size: 20px; margin: 0; line-height: 1.3; }
 h2 { font-family: 'Suisse Mono'; font-size: 15px; margin-bottom: 40px; }
 a, a:hover, a:active, a:focus{ text-decoration: none; color: #333; }
@@ -18,15 +18,17 @@ ul { margin:0; padding: 0; }
 ul li{ list-style-type: none; margin-bottom: 40px;}
 em { font-style: normal; text-decoration: underline; }
 
-.row {padding: 0 50px; }
+.row { padding: 0 50px; /*margin: 0 50px;*/ }
+.row .row { padding: 0;} /* don't do the padding in nested rows */
 .container-fluid { height: 100%; }
 .col-md-4 { padding: 50px; }
 
 /****************
 *  START PAGE
 *****************/
-#landingpage { height: 100%; padding: 0; font-size: 18px; /*background: url("../img/zange.jpg") no-repeat fixed center;*/ display: table; width: 100%; height: 100%;}
+#landingpage { height: 100%; padding: 0; /*background: url("../img/zange.jpg") no-repeat fixed center;*/ height: 100%;  }
 canvas { background-color: #ccc; position: fixed; left:0; top: 0; z-index: -1;}
+.carousel-wrap {display: table; width: 100%; height: 100%;}
 .carousel { display: table-cell; text-align: center; vertical-align: middle; z-index: 3; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.35);}
 .carousel-inner { font-size: 50px; font-size: 6vw; color: white; }
 .jump-down { position: absolute; bottom: 30px; z-index: 4; left: 50%; width: 20px; margin-left: -10px; text-align: center;}
@@ -45,14 +47,14 @@ canvas { background-color: #ccc; position: fixed; left:0; top: 0; z-index: -1;}
 /****************
 * DESCRIPTION
 *****************/
-#description{ margin-top: 100px; background: white; }
+#description{ padding-top: 100px; background: white; }
 .underline { text-decoration: underline; }
 .caption{ font-family: 'Suisse Mono'; font-size: 14px; margin-top: 14px; margin-bottom: 100px; }
 
 /****************
 * OVERVIEW
 *****************/
-.overview { font-family: 'Suisse Mono'; font-size: 22px; background-color: #00cfee; }
+.overview { padding-top: 100px; font-family: 'Suisse Mono'; font-size: 22px; background-color: #00cfee; }
 .signup{ position: relative; left: 50%; border: 2px solid #333; bottom: 10px; width: 300px; text-align: center; margin-left: -150px; padding: 10px 40px; margin-bottom: 100px; }
 .signup:hover { background-color: #333; color: white;}
 
