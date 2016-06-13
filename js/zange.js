@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+
 if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
 
 var container;
