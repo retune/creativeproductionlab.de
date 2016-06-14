@@ -20,9 +20,17 @@ em { font-style: normal; text-decoration: underline; }
 p {margin-bottom: 29px;}
 
 .row { padding: 0 50px; /*margin: 0 50px;*/ }
-.row .row { padding: 0;} /* don't do the padding in nested rows */
+.row .row { padding: 0; margin: 0;} /* don't do the padding in nested rows */
 .container-fluid { height: 100%; }
-.col-md-4 { padding: 50px; }
+.col-md-4, .col-lg-8, .col-lg-4 { padding: 50px; }
+.col-lg-8 .col-lg-6  { padding: 0; padding-left: 50px;}
+.col-lg-8 .col-lg-6:first-child {padding-right: 30px; padding-left: 0;}
+.col-xs-6{padding:0;}
+
+@media (max-width: 1200px) {
+  .col-lg-8 .col-lg-6 { padding-left: 0; padding-right: 0; }
+  .col-lg-8 .col-lg-6:first-child { padding-right: 0; }
+}
 
 /****************
 *  START PAGE
@@ -61,8 +69,11 @@ canvas { background-color: #ccc; position: fixed; left:0; top: 0; z-index: -1;}
 .signup:hover { background-color: white; color: black;}
 .signupwrap { padding-top: 0; }
 
-#team { background-color: white; padding-top: 150px; padding-bottom: 50px;}
+#team { background-color: white; padding-top: 120px; padding-bottom: 50px;}
+#team .col-md-4 {margin-top: 75px;}
+#team .col-md-4:first-child {margin-top: 0; }
 #team img {margin-bottom: 60px;}
+
 
 /****************
 * CONTACT & CREDITS
@@ -87,6 +98,6 @@ p.newsletter{ margin-top: 30px; margin-bottom: 0;}
   /*#menuoverlay li { font-size: 60px;}*/
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   #menuoverlay{ width: 100%;}
 }
