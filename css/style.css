@@ -73,6 +73,9 @@ canvas { background-color: #ccc; position: fixed; left:0; top: 0; z-index: -1;}
 #team .col-lg-4 {margin-top: 75px;}
 #team .col-lg-4:first-child {margin-top: 0; }
 #team img {margin-bottom: 60px;}
+@media (max-width: 1200px) {
+  #team .col-lg-4:last-child {margin-top: 0px;}
+}
 
 
 /****************
