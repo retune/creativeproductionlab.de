@@ -70,8 +70,8 @@ canvas { background-color: #ccc; position: fixed; left:0; top: 0; z-index: -1;}
 .signupwrap { padding-top: 0; }
 
 #team { background-color: white; padding-top: 120px; padding-bottom: 50px;}
-#team .col-md-4 {margin-top: 75px;}
-#team .col-md-4:first-child {margin-top: 0; }
+#team .col-lg-4 {margin-top: 75px;}
+#team .col-lg-4:first-child {margin-top: 0; }
 #team img {margin-bottom: 60px;}
 
 
