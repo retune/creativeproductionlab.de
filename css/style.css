@@ -55,7 +55,7 @@ canvas { background-color: #ccc; position: fixed; left:0; top: 0; z-index: -1;}
 /****************
 * OVERVIEW
 *****************/
-.overview { padding-top: 150px; font-family: 'Suisse Mono'; font-size: 22px; background-color: #00cfee; }
+.overview { padding-top: 120px; font-family: 'Suisse Mono'; font-size: 22px; background-color: #00cfee; }
 .signup{ position: relative; left: 50%; border: 2px solid #333; bottom: 10px; width: 300px; text-align: center; margin-left: -150px; padding: 10px 40px; margin-bottom: 100px; }
 .signup:hover { background-color: white; color: black;}
 .signupwrap { padding-top: 0; }
@@ -67,7 +67,7 @@ canvas { background-color: #ccc; position: fixed; left:0; top: 0; z-index: -1;}
 .contact input { width: 100%; border: 1px solid #333; }
 a.social { text-decoration: underline; margin-right: 15px; }
 p.newsletter{ margin-top: 30px; margin-bottom: 0;}
-.credits { font-family: 'Suisse Mono'; font-size: 13px; background-color: white;}
+.credits { font-family: 'Suisse Mono'; font-size: 13px; background-color: white; padding-bottom: 100px;}
 .credits h2{ margin-top: 0; }
 .retune { font-family: 'Atlas Grotesk Web'; font-weight:  400; font-style:   normal; font-stretch: normal; font-size: 30px; }
 
@@ -80,4 +80,5 @@ p.newsletter{ margin-top: 30px; margin-bottom: 0;}
   h1 { font-size: 30px; }
   h2 { font-size: 18px; }
   p{margin-bottom: 44px;}
+  #menuoverlay li { font-size: 60px;}
 }
