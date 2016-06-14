@@ -92,7 +92,7 @@ p.newsletter{ margin-top: 30px; margin-bottom: 0;}
 #imprint { background-color: white; padding-top: 150px; }
 #imprint h2 { margin: 30px 0 10px 0; line-height: 1.5;}
 
-
+/* widescreen optimizations */
 @media (min-width: 1900px) {
   body{ font-size: 30px; }
   h1 { font-size: 30px; }
@@ -101,6 +101,10 @@ p.newsletter{ margin-top: 30px; margin-bottom: 0;}
   /*#menuoverlay li { font-size: 60px;}*/
 }
 
+/* mobile optimizations */
 @media (max-width: 768px) {
   #menuoverlay{ width: 100%;}
+  .col-md-4, .col-lg-8, .col-lg-4 { padding: 0px; }
+  .nav {left: 0px;}
+  #menuoverlay li{font-size: 20px;}
 }
