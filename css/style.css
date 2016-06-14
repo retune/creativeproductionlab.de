@@ -41,9 +41,8 @@ canvas { background-color: #ccc; position: fixed; left:0; top: 0; z-index: -1;}
 #menuoverlay{ position: fixed; top:0; right:0; background-color: #20eb92; width: 50%; height:100%; z-index: 5; display: none; padding: 30px; }
 #menuoverlay li { margin-bottom: 10px; font-family: 'Suisse Mono'; font-size: 40px; }
 #menuoverlay ul{ margin-top: 40px; }
-#menuoverlay ul.social { margin-top: 0;}
 #menuoverlay ul.social li{ display: block; float: left; font-size: 14px; margin-right: 20px; }
-.imprint{font-family: 'Suisse Mono'; font-size: 14px; margin-top: 40px; display: block;}
+.imprint{font-family: 'Suisse Mono'; font-size: 14px; }
 .innerOverlay{ position: absolute; top: 30px; left: 50px; }
 .menubutton { position: absolute; top: 0px; left: 50%; z-index: 4; }
 
