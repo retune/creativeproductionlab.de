@@ -17,6 +17,7 @@ a, a:hover, a:active, a:focus{ text-decoration: none; color: #333; }
 ul { margin:0; padding: 0; }
 ul li{ list-style-type: none; margin-bottom: 40px;}
 em { font-style: normal; text-decoration: underline; }
+p {margin-bottom: 29px;}
 
 .row { padding: 0 50px; /*margin: 0 50px;*/ }
 .row .row { padding: 0;} /* don't do the padding in nested rows */
@@ -77,4 +78,5 @@ p.newsletter{ margin-top: 30px; }
   body{ font-size: 30px; }
   h1 { font-size: 30px; }
   h2 { font-size: 18px; }
+  p{margin-bottom: 44px;}
 }
