@@ -11,8 +11,8 @@
 
 html { height: 100%; }
 body{ font-family: 'Atlas Grotesk Web'; font-weight: 400; font-style: normal; font-stretch: normal; font-size: 20px; line-height: 1.5; height: 100%;  background-color: #ccc;}
-h1 { font-size: 20px; margin: 0; line-height: 1.3; }
-h2 { font-family: 'Suisse Mono'; font-size: 15px; margin-bottom: 40px; }
+h1 { font-size: 20px; margin: 0; line-height: 1.3; font-weight: 400; }
+h2 { font-family: 'Suisse Mono'; font-size: 15px; margin-bottom: 40px; font-weight: 400;}
 a, a:hover, a:active, a:focus{ text-decoration: none; color: #333; }
 ul { margin:0; padding: 0; }
 ul li{ list-style-type: none; margin-bottom: 40px;}
@@ -54,7 +54,7 @@ canvas { background-color: #ccc; position: fixed; left:0; top: 0; z-index: -1;}
 /****************
 * OVERVIEW
 *****************/
-.overview { padding-top: 200px; font-family: 'Suisse Mono'; font-size: 22px; background-color: #00cfee; }
+.overview { padding-top: 180px; font-family: 'Suisse Mono'; font-size: 22px; background-color: #00cfee; }
 .signup{ position: relative; left: 50%; border: 2px solid #333; bottom: 10px; width: 300px; text-align: center; margin-left: -150px; padding: 10px 40px; margin-bottom: 100px; }
 .signup:hover { background-color: #333; color: white;}
 
@@ -69,7 +69,7 @@ p.newsletter{ margin-top: 30px; }
 .credits h2{ margin-top: 0; }
 .retune { font-family: 'Atlas Grotesk Web'; font-weight:  400; font-style:   normal; font-stretch: normal; font-size: 30px; }
 
-#imprint { background-color: white; padding-top: 100px; }
+#imprint { background-color: white; padding-top: 200px; }
 #imprint h2 { margin: 30px 0 10px 0; line-height: 1.5;}
 
 
