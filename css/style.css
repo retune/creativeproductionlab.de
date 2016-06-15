@@ -83,7 +83,7 @@ canvas { background-color: #ccc; position: fixed; left:0; top: 0; z-index: -1;}
 /****************
 * CONTACT & CREDITS
 *****************/
-#contact { background-color: white; margin-top: 30%;}
+#contact { background-color: white; margin-top: 30%; padding-top: 120px;}
 .contact input { width: 100%; border: 1px solid #333; }
 a.social { text-decoration: underline; margin-right: 15px; }
 p.newsletter{ margin-top: 30px; margin-bottom: 0;}
