@@ -68,6 +68,8 @@ canvas { background-color: #ccc; position: fixed; left:0; top: 0; z-index: -1;}
 .signup{ position: relative; left: 50%; border: 2px solid #333; bottom: 10px; width: 300px; text-align: center; margin-left: -150px; padding: 10px 40px; margin-bottom: 100px; }
 .signup:hover { background-color: white; color: black;}
 .signupwrap { padding-top: 0; }
+#overview {line-height: 1.5;}
+#overview ul li { margin-bottom: 22px;}
 
 #team { background-color: white; padding-top: 120px; padding-bottom: 50px;}
 #team .col-lg-4 {margin-top: 75px;}
