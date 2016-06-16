@@ -66,6 +66,7 @@ function init() {
   particleLight.add( pointLight );
 
   renderer = new THREE.WebGLRenderer( { alpha: true, antialias: true } );
+  renderer.setClearColor( 0xcccccc );
   renderer.setPixelRatio( window.devicePixelRatio );
   renderer.setSize( window.innerWidth, window.innerHeight );
 
